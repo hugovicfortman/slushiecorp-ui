@@ -1,0 +1,31 @@
+$brightChocolate: #703020;
+$darkChocolate: #442414;
+
+.stats{
+    background-color: $brightChocolate;
+    color:#dfcfaa;
+    padding: 0;
+    margin: 0;
+    border:2px solid $darkChocolate;
+    width:100%;
+
+    thead{
+        th{
+            background-color: $darkChocolate;
+            padding: 5px;
+            font-weight:bolder;
+        }
+    }
+    tbody{
+        font-size: small;
+
+        th, td{
+            padding: 5px;
+        }
+        
+        th{
+            text-align:left;
+            font-weight: bold;
+        }
+    }
+}

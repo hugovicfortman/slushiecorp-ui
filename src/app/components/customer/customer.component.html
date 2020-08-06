@@ -1,0 +1,26 @@
+<div class="card client" [attr.status]="getStateFriendlyText(customer.customerState).replace(' ','').toLowerCase()">
+    <div class="client-body">
+        <div class="client-image">
+            <aside class="img-frame" title="Slushie Level: {{ customer.slushieLevel }}%">
+                <img class="slurpie-svg" src="../../../assets/images/slurpie.svg" alt="slushie {{ customer.slushieLevel }}%" />
+            </aside>
+            <small>{{ customer.slushieLevel }}</small>
+        </div>
+        <div class="client-text">
+            <div class="text-frame">
+                <article>
+                    <h3>{{ customer.customerName }}</h3>
+                    <div title="Consumption Rate">
+                        <span class="consumption">
+                            <span>{{ customer.consumptionRate }}</span>
+                            <sup>%/s</sup>
+                        </span>
+                    </div>
+                    <div class="client-status">
+                        <span>{{ getStateFriendlyText(customer.customerState) }}</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>

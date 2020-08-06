@@ -1,0 +1,15 @@
+<div>
+    <div class="header-bar">
+        <div routerLink="" class="back-button">
+            &larr; Back
+        </div>
+    </div>
+    <div class="content-list">
+        <article>
+            <app-ticket *ngFor="let order of orders" [order]="order"></app-ticket>
+        </article>
+        <aside class="sidebar">
+            <app-stats></app-stats>
+        </aside>
+    </div>
+</div>

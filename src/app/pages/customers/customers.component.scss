@@ -1,0 +1,58 @@
+.btn-add{
+    font-size:xx-large;
+    position:sticky;
+    top:75px;
+    width:50px;
+    height:50px;
+}
+.corner-content{
+    top:5px;
+    right:25px;
+    width:50px;
+    margin:20px 0px;
+    position: absolute;
+}
+.popup{
+    right:15px;
+    width:300px;
+    height:180px;
+    position:absolute;
+    padding:10px 25px;
+    border:2px solid #511;
+    background-color:#efefef;
+    box-shadow:2px 2px 4px rgba(200,200,220, 0.8);
+
+    .error-bar{
+        position:relative;
+
+        article{
+            position:absolute;
+            left: -10px;
+            top:15px;
+            width:100%;
+            background-color:#e44;
+            padding:10px;
+            border-radius:5px;
+            margin-top:5px;
+            font-size:smaller;
+            color:#eee;
+        }
+    }
+}
+.action-corner{
+    position:sticky;
+    top:100px;
+    z-index:900;
+}
+
+.content-list{
+    padding:30px 15px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:10px 0px;
+}
+.client{
+    width:400px;
+    height:200px;
+}

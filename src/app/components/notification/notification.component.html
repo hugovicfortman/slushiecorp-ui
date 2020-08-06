@@ -1,0 +1,13 @@
+<div *ngIf="showing" class="notification-frame">
+    <div>
+        <div class="notification">
+            <div class="nf-button">
+                <span *ngIf="closebutton" class="closebutton" (click)="close()">+</span>
+            </div>
+            <div class="nf-inner">            
+                <div class="message">{{ message }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+

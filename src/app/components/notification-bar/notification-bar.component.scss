@@ -1,0 +1,14 @@
+.nb-frame{
+    position:absolute;
+    height:2px;
+    left:50%;
+    width:2px;
+    margin-left:-1px;
+    margin-top:15px;
+}
+.nb-outer{
+    position:absolute;
+    background-color:rgba(252, 175, 104, 0.3);
+    transform:translate(-50%, 0);
+    width:72vw;
+}

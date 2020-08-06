@@ -1,0 +1,35 @@
+<div>
+    <div class="header-bar">
+        <div routerLink="" class="back-button">
+            &larr; Back
+        </div>
+    </div>
+    <div class="action-corner">
+        <div class="corner-content">
+            <input class="btn btn-round btn-add" type="button" value="+" (click)="toggleForm()"/>
+            <div class="popup" *ngIf="addingNew">
+                <form #frm_customer="ngForm" (ngSubmit)="formSubmitted(frm_customer)">
+                    <h4>New Customer</h4>
+                    <div>
+                        <input name="customerName" class="text-field" type="text" placeholder="Name" ngModel required aria-required="true"/>
+                        <input name="consumptionRate" class="text-field" type="number" min="1" max="100" placeholder="Consumption Rate" ngModel required aria-required="true"/>
+                    </div>
+                    <div class="txt-right">
+                        <input class="btn" type="submit" value="Create" />
+                    </div>
+                </form>
+                <div class="error-bar" *ngIf="formErrors.length > 0">
+                    <article>
+                        <em>The following errors occured</em>
+                        <ul>
+                            <li *ngFor="let error of formErrors"><small>{{ error }}</small></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-list">
+        <app-customer *ngFor="let customer of customers" [customer]="customer"></app-customer>
+    </div>
+</div>

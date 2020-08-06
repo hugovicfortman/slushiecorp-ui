@@ -1,0 +1,16 @@
+<div class="card ticket">
+    <div class="new-badge" *ngIf="order.isNewCustomer">
+        <div class="bdg-outer">
+            <div class="bdg-inner" title="{{ order.customer.customerName }} 
+            is a new Customer. Treat them nicely to enjoy more patronage">New Customer</div>
+        </div>
+    </div>
+    <div class="ticket-body">
+        <h4 class="title">New Order </h4>
+        <div class="ticket-name">{{ order.customer.customerName }}</div>
+        <div class="actions">
+            <input class="btn btn-success" type="button" value="Supply" (click)="confirmTicket()" />
+            <input class="btn btn-danger" type="button" value="Reject" (click)="rejectTicket()" />
+        </div>
+    </div>
+</div>

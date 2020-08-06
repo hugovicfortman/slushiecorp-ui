@@ -1,0 +1,5 @@
+<div class="nb-frame">
+    <div class="nb-outer">
+        <app-notification *ngFor="let notification of notifications" [retentive]="notification.retentive" [message]="notification.message"></app-notification>
+    </div>
+</div>
