@@ -50,7 +50,7 @@ export class CustomerComponent implements OnInit {
       .subscribe((order: Order) => this.notificationService.popup(`${this.customer.customerName} places and order ${ order.orderID }`));
   }
 
-  private getStateFriendlyText(code: number): string
+  getStateFriendlyText(code: number): string
   {
     return Object.keys(CustomerStateCodes).find(k => CustomerStateCodes[k] == code);
   }
